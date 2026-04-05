@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+
+  --color-pastel-pink: #ffe4e6;
+  --color-pastel-lavender: #f3e8ff;
+  --color-pastel-blue: #e0f2fe;
+  --color-pastel-mint: #ecfdf5;
+  --color-pastel-yellow: #fefce8;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-800 font-sans;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm rounded-2xl;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
